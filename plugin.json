@@ -3,7 +3,7 @@
   "name": "Astropole",
   "version": "1.3.1",
   "author": "NDesumeur",
-  "description": "Une ville spatiale idle : les bâtiments produisent des crédits, même NeoDex fermé.",
+  "description": "Jeu de gestion incrémental : achète des bâtiments qui produisent des crédits chaque seconde, même NeoDex fermé, et réinvestis pour débloquer des constructions toujours plus grandes. Tous les 25 exemplaires, un bâtiment produit deux fois plus ; après 1 billion de crédits, une nouvelle colonie repart de zéro avec des Mémoires qui ajoutent 10 % de production pour toujours.",
   "icon": "icon.png",
   "entry": "index.js",
   "view": "astropole",
