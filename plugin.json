@@ -1,7 +1,7 @@
 {
   "id": "neodex.astropole",
   "name": "Astropole",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "author": "NDesumeur",
   "description": "Jeu de gestion incrémental en pixel art : bâtis une ville spatiale dont les bâtiments produisent des crédits chaque seconde, même NeoDex fermé. Chaque sorte de bâtiment a son quartier et la ville se remplit, de jour comme de nuit. Recherches, succès qui ajoutent de la production pour toujours, pluies de météores, marchand, et des colonies sur six planètes avec des Mémoires à dépenser en avantages.",
   "icon": "icon.png",
@@ -14,8 +14,8 @@
     "windows",
     "linux"
   ],
-  "syncMode": "progression",
-  "syncInfo": "Partie, recherches, succès et avantages.",
+  "syncMode": "aucune",
+  "syncInfo": "Rien n'est synchronisé : tes records restent sur cet appareil.",
   "mobile": false,
   "system": false,
   "dependencies": {},
