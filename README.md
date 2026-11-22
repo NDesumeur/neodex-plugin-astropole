@@ -1,50 +1,84 @@
 # Astropole
 
-Un jeu de gestion incrémental en pixel art : bâtis une ville spatiale dont les bâtiments produisent des crédits chaque seconde, même quand NeoDex est fermé. Chaque sorte de bâtiment a son quartier, la ville se remplit, et le jour et la nuit passent sur six planètes différentes.
+Un jeu incrémental en pixel art, refait de zéro dans sa version 2. Tu bâtis une ville spatiale dont les bâtiments produisent des crédits chaque seconde, même quand NeoDex est fermé. Le jeu a quatre couches, et chacune change les règles : la ville, les colonies, les singularités, puis la galaxie.
 
 *English version: [README.en.md](README.en.md)*
 
-## Comment jouer
+## La ville
 
-- **Clique sur la ville** : chaque clic rapporte au moins 1 crédit, plus une seconde de production. Les premiers bâtiments sont bon marché pour démarrer vite, et un conseil t'indique toujours quoi faire ensuite.
-- **Achète des bâtiments** : du module d'habitat à la serre, au champ solaire, à la mine… jusqu'au moteur à trou noir et à l'architecte du vide. Les boutons **×1**, **×10**, **×100** et **MAX** choisissent combien en acheter d'un coup.
-- Tous les **25 exemplaires** d'un même bâtiment, sa production **double**. Après les seize premiers viennent les **mégastructures**, des stations en orbite, sans fin.
-
-## Une ville vivante
-
-- Chaque sorte de bâtiment a **son quartier** : devant les petits bâtiments, derrière les tours, au fond les géants. Plus tu en achètes, plus le quartier se remplit et ses bâtiments grandissent. Le prochain bâtiment à débloquer a déjà son chantier.
-- **Le jour et la nuit** passent toutes les 4 minutes : lever et coucher de soleil, étoiles et aurores, fenêtres et lampadaires qui s'allument.
-- Des passants, des voitures volantes, un monorail, des fusées qui décollent du port spatial, des nuages et des vaisseaux dans le ciel.
-
-## Recherches et succès
-
-- L'onglet **Recherches** propose des améliorations à acheter : chaque bâtiment ×3 à 10, 25, 50, 100, 200 et 400 exemplaires, des **liaisons** (chaque bâtiment renforce le suivant de 1 %) et des clics deux fois plus forts.
-- L'onglet **Succès** compte 73 succès. Chacun ajoute **3 % de production pour toujours**.
+- **Clique sur la ville** : chaque clic rapporte des crédits.
+- **Achète des bâtiments** dans l'onglet Bâtiments, avec les boutons ×1, ×10, ×100 ou MAX. Ils vont du module d'habitat jusqu'à l'architecte du vide, puis aux mégastructures en orbite, sans fin.
+- Tous les **25 exemplaires** d'un même bâtiment, sa production **double**.
+- Chaque sorte de bâtiment a **son quartier**. Les petits sont devant et les tours derrière. Un quartier se remplit et grandit quand tu en achètes plus.
+- **Double-clique sur un quartier** pour le voir de près : ses habitants se promènent, discutent et dansent. Le bouton ← Ville (ou Échap) revient à la vue d'ensemble.
+- **Le jour et la nuit** passent toutes les 4 minutes. On voit des aurores, un monorail, des voitures volantes, des fusées et des nuages.
 
 ## Événements
 
-- **Pluie de météores** : clique sur les météores pour gagner des crédits.
-- **Le marchand** passe dans un vaisseau doré : clique dessus et choisis un bonus parmi trois (production ×7, clics ×20, bâtiments à moitié prix…).
-- Les **cargos jaunes** rapportent 30 secondes de production quand tu cliques dessus.
+- **Un vaisseau qui arrive** ou **une fête** dans un quartier : une bulle apparaît au-dessus. Clique dessus pour zoomer, puis clique sur le vaisseau (2 minutes de production) ou sur la fête (production ×3 pendant 2 minutes).
+- **Pluie de météores** : clique sur les météores.
+- **Le marchand** passe dans un vaisseau doré : choisis un bonus parmi trois.
+- **Les cargos jaunes** rapportent 30 secondes de production.
 
-## Le temps qui passe
+## Les colonies
 
-La colonie produit même quand NeoDex est fermé. À l'ouverture, tout le temps écoulé depuis la dernière sauvegarde est compté, sur n'importe lequel de tes PC, et le jeu affiche ce que tu as gagné pendant ton absence.
+- **Recherches** : chaque bâtiment ×3 à 10, 25, 50, 100, 200 et 400 exemplaires, des liaisons entre bâtiments, des clics plus forts.
+- **Doctrine** : à chaque colonie, tu choisis une seule voie parmi trois, avec quatre paliers.
+  - **Industrie** : une ville qui tourne seule (prix réduits, paliers ×2,5, achats automatiques).
+  - **Science** : recherches moins chères, Mémoires ×2, succès qui valent le double.
+  - **Commerce** : clics ×10, événements plus fréquents, marchand plus généreux.
+- **Nouvelle colonie** (onglet Colonie) : après 1 billion de crédits produits, tu recommences sur la planète suivante avec des **Mémoires**. Une Mémoire gardée ajoute 10 % de production. Dépensée, elle achète un avantage.
+- Chaque planète a ses forces : Cryos, Pyra, Sylve, Aurore et Nébula.
 
-## Nouvelle colonie
+## Les défis
 
-Une fois **1 billion de crédits** produits, **Nouvelle colonie** recommence tout sur la **planète suivante** en te donnant des **Mémoires**. Chaque planète a ses forces : Cryos (raffineries ×10), Pyra (mines ×10, clics ×3), Sylve (serres ×10, événements plus fréquents), Aurore (ports ×5, cargos plus fréquents), Nébula (laboratoires ×10, recherches moins chères).
+Ils s'ouvrent après 5 colonies ou à la première singularité. Un défi recommence la colonie avec une contrainte, et le réussir donne un bonus pour toujours. Il y en a huit :
 
-Une Mémoire gardée ajoute 10 % de production ; dans l'onglet **Mémoires**, tu peux aussi la dépenser en **avantages** pour toujours : Héritage (production ×2), Mains d'or (clics ×5), Architectes (bâtiments moins chers), Fondations (plus de crédits au départ), Bonne étoile (événements plus fréquents).
+- Panne de clics
+- Inflation
+- Sans recherche
+- Isolement
+- Éclipse
+- Calme plat
+- Spécialiste
+- Amnésie
 
-Le bouton **Plein écran** est en haut de la page.
+## Les singularités
 
-## Données et synchronisation
+Une fois **1e50 crédits** produits, la ville peut **s'effondrer en singularités**. Tout repart de zéro, Mémoires comprises. Ce qui est gagné en échange change le jeu :
 
-Ta partie, tes ressources et tes déblocages sont enregistrés par NeoDex, sauvegardés et synchronisés entre tes PC si la synchro est activée. Aucune autre autorisation, aucune connexion à Internet.
+- **La matière noire** apparaît et grandit avec le temps. Elle multiplie toute la production par (1 + matière noire)².
+- **Les lois de la physique** s'achètent avec les singularités :
+  - les Automates achètent les bâtiments tout seuls ;
+  - les Archives vivantes achètent les recherches ;
+  - Polymathe donne deux doctrines à la fois ;
+  - avec les Paliers serrés, un bâtiment double tous les 10 exemplaires ;
+  - avec le Trou de ver, le temps passé loin compte double.
+- **Les distorsions** s'achètent avec la matière noire : dilatation du temps, compression des prix, gravité des mégastructures, écho des Mémoires.
 
-## Installer
+Une partie commencée avant la version 2 compte tout ce qu'elle a déjà produit pour la première singularité.
 
-Dans NeoDex : **NeoStore → À découvrir → Astropole → Installer**.
+## La galaxie
 
-Développer un plugin : voir le [SDK NeoDex](https://github.com/NDesumeur/neodex-sdk).
+Avec **30 singularités** gagnées, l'**exode** donne des **Étoiles**. La carte de la galaxie a 22 systèmes reliés par des routes. Tu conquiers les systèmes voisins des tiens, et chacun donne un bonus pour toujours :
+
+- production ×1 000 ;
+- matière noire ×3 ;
+- singularités ×1,5 ;
+- Mémoires ×10 ;
+- bâtiments moins chers ;
+- événements plus fréquents ;
+- départ plus riche.
+
+## Le retour et les chiffres
+
+- Au retour, un **rapport d'absence** montre ce qui a été produit et les événements manqués. Il te laisse choisir :
+  - **encaisser** ;
+  - **réinvestir** tout de suite ;
+  - faire une **fête de retour** (un quart des gains contre une production ×3 pendant 15 minutes) ;
+  - **rappeler le marchand**.
+- L'onglet **Statistiques** montre la production dans le temps, sur 2 jours ou 30 jours, avec les colonies, défis, singularités et exodes.
+- On y choisit aussi la **notation des grands nombres** : noms (millions, milliards), scientifique, ingénieur, lettres ou logarithme.
+- Il y a **101 succès**. Chacun ajoute 3 % de production pour toujours.
+
+Le bouton **Plein écran** est en haut de la page. La partie reste sur cet appareil. Une partie de la version 1 continue telle quelle.
