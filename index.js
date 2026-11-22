@@ -45,7 +45,7 @@ const CSS = `.apWrap{position:relative}
 .apAway>div{width:min(560px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:18px 20px;display:flex;flex-direction:column;gap:10px}
 .apAway h3{margin:0;color:#ffd07a;font-size:14px;letter-spacing:1px}.apAway ul{margin:0;padding-left:18px;line-height:1.6}
 .apAway .apChoice{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
-.apAway .apChoice button{display:flex;flex-direction:column;gap:4px;text-align:left;white-space:normal;padding:10px}.apAway .apChoice small{color:var(--muted);font-size:11px;line-height:1.35}
+.apAway .apChoice button{display:flex;flex-direction:column;justify-content:flex-start;gap:4px;text-align:left;white-space:normal;padding:10px;height:auto;min-height:44px}.apAway .apChoice small{color:var(--muted);font-size:11px;line-height:1.35}
 @media(max-width:760px){.apMain{flex-direction:column}.apSide{flex:none}.apBox{max-width:none;width:100%}.apList{grid-template-columns:1fr}}
 `;
 export default async function (ctx) {

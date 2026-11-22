@@ -1,7 +1,7 @@
 {
   "id": "neodex.astropole",
   "name": "Astropole",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "NDesumeur",
   "description": "Jeu incrémental en pixel art, refait de zéro : bâtis une ville spatiale qui produit des crédits même NeoDex fermé, zoome sur ses quartiers et leurs habitants, attrape vaisseaux, fêtes, météores et marchand. Quatre couches qui changent les règles : colonies sur six planètes avec doctrines exclusives et défis, singularités et matière noire, puis une galaxie à conquérir.",
   "icon": "icon.png",

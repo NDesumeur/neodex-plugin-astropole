@@ -73,6 +73,8 @@ module.exports = async ({ pj, sleep }) => {
   await run(`a.welcome(7200, a.tickTime(7200, true))`); await sleep(150);
   const aw = await pj(`(() => { const b = document.getElementById('apAway'); return b.classList.contains('on') && b.querySelectorAll('.apChoice button').length >= 3; })()`);
   if (!aw) throw new Error('pas de rapport d’absence');
+  const spill = await pj(`[...document.querySelectorAll('#apAway .apChoice button')].filter(b => b.scrollHeight > b.clientHeight + 1 || [...b.children].some(c => c.getBoundingClientRect().bottom > b.getBoundingClientRect().bottom + 1)).map(b => b.textContent.slice(0, 20)).join(', ')`);
+  if (spill) throw new Error('texte qui dépasse des boutons d’absence : ' + spill);
   await pj(`document.querySelectorAll('#apAway .apChoice button')[2].click(), 0`); await sleep(100);
   if (!(await S('f.buffs.some(b => b.k === "prod")')) || await pj(`document.getElementById('apAway').classList.contains('on')`)) throw new Error('le choix « fête de retour » ne marche pas');
   // une partie de la 1.4.1 continue telle quelle
