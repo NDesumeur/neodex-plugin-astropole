@@ -64,6 +64,9 @@ export default async function (ctx) {
     if (old?.city) { games.city = old.city; await folder.write('games', games); }
   }
   games = {best: {}, ...games};
+  // les trophées de NeoDex (3.4.8 et plus) : succès et records déclarés dans plugin.json ; sur un NeoDex plus ancien, rien ne se passe
+  const trophy = (id, quiet) => { ctx.games?.unlock(id, quiet).catch(() => {}); };  // quiet : sans message de NeoDex (le jeu montre déjà le sien)
+  const trophyRecord = (id, v) => { if (v != null && Number.isFinite(+v)) ctx.games?.record(id, +v).catch(() => {}); };
   let saveTimer = null;
   const save = () => { clearTimeout(saveTimer); saveTimer = setTimeout(() => { saveTimer = null; folder.write('games', games).catch(() => {}); }, 400); };
 
@@ -248,7 +251,7 @@ const ACH = (() => {
 })();
 function achCheck() {
   const s = S(), got = ACH.filter(([id, , f]) => !s.ach.includes(id) && f(s)); if (!got.length) return 0;
-  s.ach.push(...got.map(a => a[0])); sfx('notify'); save();
+  s.ach.push(...got.map(a => a[0])); sfx('notify'); save(); apTrophies();
   const pc = br('s3') ? 6 : 3;
   toast(got.length === 1 ? T('Succès : {a} (+{p} % de production)', {a: got[0][1], p: pc}) : T('{n} succès débloqués (+{p} % de production)', {n: got.length, p: got.length * pc}));
   return got.length;
@@ -1004,6 +1007,7 @@ function welcome(sec, got) {
 
 /* ---- l'ouverture ---- */
 function openGame() {
+  setTimeout(apTrophies);
   const s = S(), sec = Math.max(0, (Date.now() - s.last) / 1000), got = tickTime(sec, true); s.last = Date.now();
   if (!cityFx) {
     const mk = () => { const c = document.createElement('canvas'); c.width = W; c.height = H; return c; }, scene = mk(), st = mk();
@@ -1029,5 +1033,11 @@ $('apFs').onclick = () => { $('apFs').blur(); $('apCv').parentElement.requestFul
     && GAL.length === 22 && GAL.every((p, i) => !i || p.cost >= 1) && GAL.every(p => p.n.length) && CHALLENGES.length === 8 && LAWS.every(l => l.cost > 0);
   console.assert(ok, 'astropole'); view.dataset.selfcheck = ok ? 'ok' : 'astropole';
 }
+  // les trophées, tirés des statistiques et des records gardés (aussi à l'ouverture : ce qui a été fait avant compte)
+  function apTrophies() {  // les succès du jeu (s.ach) passent dans NeoDex, sans message : le jeu montre déjà le sien
+    const s = S(), sig = [s.ach.length, totB(s), s.colonies, s.singTot, s.sys?.length].join(); if (sig === apTrophies.sig) return; apTrophies.sig = sig;
+    for (const id of s.ach) trophy('a-' + id.replace('.', '-'), true);
+    trophyRecord('batiments', totB(s) || null); trophyRecord('colonies', s.colonies || null); trophyRecord('singularites', s.singTot || null); trophyRecord('systemes', s.sys?.length > 1 ? s.sys.length - 1 : null);
+  }
   ctx.onOpen(() => openGame());
 }

@@ -1,7 +1,7 @@
 {
   "id": "neodex.astropole",
   "name": "Astropole",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "author": "NDesumeur",
   "description": "Jeu incrémental en pixel art, refait de zéro : bâtis une ville spatiale qui produit des crédits même NeoDex fermé, zoome sur ses quartiers et leurs habitants, attrape vaisseaux, fêtes, météores et marchand. Quatre couches qui changent les règles : colonies sur six planètes avec doctrines exclusives et défis, singularités et matière noire, puis une galaxie à conquérir.",
   "icon": "icon.png",
@@ -22,5 +22,542 @@
   "sdk": "2.1.0",
   "permissions": [
     "storage"
+  ],
+  "succes": [
+    {
+      "id": "a-n10",
+      "nom": "10 bâtiments",
+      "texte": "Avoir 10 bâtiments en tout"
+    },
+    {
+      "id": "a-n50",
+      "nom": "50 bâtiments",
+      "texte": "Avoir 50 bâtiments en tout"
+    },
+    {
+      "id": "a-n100",
+      "nom": "100 bâtiments",
+      "texte": "Avoir 100 bâtiments en tout"
+    },
+    {
+      "id": "a-n250",
+      "nom": "250 bâtiments",
+      "texte": "Avoir 250 bâtiments en tout"
+    },
+    {
+      "id": "a-n500",
+      "nom": "500 bâtiments",
+      "texte": "Avoir 500 bâtiments en tout"
+    },
+    {
+      "id": "a-n1000",
+      "nom": "1 000 bâtiments",
+      "texte": "Avoir 1 000 bâtiments en tout"
+    },
+    {
+      "id": "a-n2500",
+      "nom": "2 500 bâtiments",
+      "texte": "Avoir 2 500 bâtiments en tout"
+    },
+    {
+      "id": "a-n5000",
+      "nom": "5 000 bâtiments",
+      "texte": "Avoir 5 000 bâtiments en tout"
+    },
+    {
+      "id": "a-n10000",
+      "nom": "10 000 bâtiments",
+      "texte": "Avoir 10 000 bâtiments en tout"
+    },
+    {
+      "id": "a-p3",
+      "nom": "1 000 crédits produits",
+      "texte": "Produire 1 000 crédits en tout"
+    },
+    {
+      "id": "a-p6",
+      "nom": "1 million de crédits produits",
+      "texte": "Produire 1 million de crédits en tout"
+    },
+    {
+      "id": "a-p9",
+      "nom": "1 milliard de crédits produits",
+      "texte": "Produire 1 milliard de crédits en tout"
+    },
+    {
+      "id": "a-p12",
+      "nom": "1 billion de crédits produits",
+      "texte": "Produire 1 billion de crédits en tout"
+    },
+    {
+      "id": "a-p15",
+      "nom": "1 billiard de crédits produits",
+      "texte": "Produire 1 billiard de crédits en tout"
+    },
+    {
+      "id": "a-p18",
+      "nom": "1 trillion de crédits produits",
+      "texte": "Produire 1 trillion de crédits en tout"
+    },
+    {
+      "id": "a-p24",
+      "nom": "1 quadrillion de crédits produits",
+      "texte": "Produire 1 quadrillion de crédits en tout"
+    },
+    {
+      "id": "a-p30",
+      "nom": "1 quintillion de crédits produits",
+      "texte": "Produire 1 quintillion de crédits en tout"
+    },
+    {
+      "id": "a-p40",
+      "nom": "1e40 crédits produits",
+      "texte": "Produire 1e40 crédits en tout"
+    },
+    {
+      "id": "a-p50",
+      "nom": "1e50 crédits produits",
+      "texte": "Produire 1e50 crédits en tout"
+    },
+    {
+      "id": "a-p75",
+      "nom": "1e75 crédits produits",
+      "texte": "Produire 1e75 crédits en tout"
+    },
+    {
+      "id": "a-p100",
+      "nom": "1e100 crédits produits",
+      "texte": "Produire 1e100 crédits en tout"
+    },
+    {
+      "id": "a-p150",
+      "nom": "1e150 crédits produits",
+      "texte": "Produire 1e150 crédits en tout"
+    },
+    {
+      "id": "a-p250",
+      "nom": "1e250 crédits produits",
+      "texte": "Produire 1e250 crédits en tout"
+    },
+    {
+      "id": "a-p400",
+      "nom": "1e400 crédits produits",
+      "texte": "Produire 1e400 crédits en tout"
+    },
+    {
+      "id": "a-p600",
+      "nom": "1e600 crédits produits",
+      "texte": "Produire 1e600 crédits en tout"
+    },
+    {
+      "id": "a-p1000",
+      "nom": "1e1000 crédits produits",
+      "texte": "Produire 1e1000 crédits en tout"
+    },
+    {
+      "id": "a-c50",
+      "nom": "50 clics",
+      "texte": "Cliquer 50 fois sur la ville"
+    },
+    {
+      "id": "a-c500",
+      "nom": "500 clics",
+      "texte": "Cliquer 500 fois sur la ville"
+    },
+    {
+      "id": "a-c2500",
+      "nom": "2 500 clics",
+      "texte": "Cliquer 2 500 fois sur la ville"
+    },
+    {
+      "id": "a-c10000",
+      "nom": "10 000 clics",
+      "texte": "Cliquer 10 000 fois sur la ville"
+    },
+    {
+      "id": "a-s1",
+      "nom": "1 cargo attrapé",
+      "texte": "Attraper 1 cargo"
+    },
+    {
+      "id": "a-s10",
+      "nom": "10 cargos attrapés",
+      "texte": "Attraper 10 cargos"
+    },
+    {
+      "id": "a-s50",
+      "nom": "50 cargos attrapés",
+      "texte": "Attraper 50 cargos"
+    },
+    {
+      "id": "a-m10",
+      "nom": "10 météores",
+      "texte": "Cliquer 10 météores"
+    },
+    {
+      "id": "a-m100",
+      "nom": "100 météores",
+      "texte": "Cliquer 100 météores"
+    },
+    {
+      "id": "a-m500",
+      "nom": "500 météores",
+      "texte": "Cliquer 500 météores"
+    },
+    {
+      "id": "a-v1",
+      "nom": "1 marché conclu",
+      "texte": "Conclure 1 marché avec le marchand"
+    },
+    {
+      "id": "a-v10",
+      "nom": "10 marchés conclus",
+      "texte": "Conclure 10 marchés avec le marchand"
+    },
+    {
+      "id": "a-v50",
+      "nom": "50 marchés conclus",
+      "texte": "Conclure 50 marchés avec le marchand"
+    },
+    {
+      "id": "a-k1",
+      "nom": "1 colonie fondée",
+      "texte": "Fonder 1 colonie"
+    },
+    {
+      "id": "a-k3",
+      "nom": "3 colonies fondées",
+      "texte": "Fonder 3 colonies"
+    },
+    {
+      "id": "a-k6",
+      "nom": "6 colonies fondées",
+      "texte": "Fonder 6 colonies"
+    },
+    {
+      "id": "a-k10",
+      "nom": "10 colonies fondées",
+      "texte": "Fonder 10 colonies"
+    },
+    {
+      "id": "a-k25",
+      "nom": "25 colonies fondées",
+      "texte": "Fonder 25 colonies"
+    },
+    {
+      "id": "a-k50",
+      "nom": "50 colonies fondées",
+      "texte": "Fonder 50 colonies"
+    },
+    {
+      "id": "a-r5",
+      "nom": "5 recherches dans une colonie",
+      "texte": "Faire 5 recherches dans une même colonie"
+    },
+    {
+      "id": "a-r25",
+      "nom": "25 recherches dans une colonie",
+      "texte": "Faire 25 recherches dans une même colonie"
+    },
+    {
+      "id": "a-r60",
+      "nom": "60 recherches dans une colonie",
+      "texte": "Faire 60 recherches dans une même colonie"
+    },
+    {
+      "id": "a-t0-25",
+      "nom": "25 × Module d'habitat",
+      "texte": "Avoir 25 × Module d'habitat"
+    },
+    {
+      "id": "a-t0-100",
+      "nom": "100 × Module d'habitat",
+      "texte": "Avoir 100 × Module d'habitat"
+    },
+    {
+      "id": "a-t1-25",
+      "nom": "25 × Serre hydroponique",
+      "texte": "Avoir 25 × Serre hydroponique"
+    },
+    {
+      "id": "a-t1-100",
+      "nom": "100 × Serre hydroponique",
+      "texte": "Avoir 100 × Serre hydroponique"
+    },
+    {
+      "id": "a-t2-25",
+      "nom": "25 × Champ solaire",
+      "texte": "Avoir 25 × Champ solaire"
+    },
+    {
+      "id": "a-t2-100",
+      "nom": "100 × Champ solaire",
+      "texte": "Avoir 100 × Champ solaire"
+    },
+    {
+      "id": "a-t3-25",
+      "nom": "25 × Mine d'astéroïdes",
+      "texte": "Avoir 25 × Mine d'astéroïdes"
+    },
+    {
+      "id": "a-t3-100",
+      "nom": "100 × Mine d'astéroïdes",
+      "texte": "Avoir 100 × Mine d'astéroïdes"
+    },
+    {
+      "id": "a-t4-25",
+      "nom": "25 × Raffinerie de glace",
+      "texte": "Avoir 25 × Raffinerie de glace"
+    },
+    {
+      "id": "a-t4-100",
+      "nom": "100 × Raffinerie de glace",
+      "texte": "Avoir 100 × Raffinerie de glace"
+    },
+    {
+      "id": "a-t5-25",
+      "nom": "25 × Chantier naval",
+      "texte": "Avoir 25 × Chantier naval"
+    },
+    {
+      "id": "a-t5-100",
+      "nom": "100 × Chantier naval",
+      "texte": "Avoir 100 × Chantier naval"
+    },
+    {
+      "id": "a-t6-25",
+      "nom": "25 × Laboratoire orbital",
+      "texte": "Avoir 25 × Laboratoire orbital"
+    },
+    {
+      "id": "a-t6-100",
+      "nom": "100 × Laboratoire orbital",
+      "texte": "Avoir 100 × Laboratoire orbital"
+    },
+    {
+      "id": "a-t7-25",
+      "nom": "25 × Port spatial",
+      "texte": "Avoir 25 × Port spatial"
+    },
+    {
+      "id": "a-t7-100",
+      "nom": "100 × Port spatial",
+      "texte": "Avoir 100 × Port spatial"
+    },
+    {
+      "id": "a-t8-25",
+      "nom": "25 × Anneau d'habitation",
+      "texte": "Avoir 25 × Anneau d'habitation"
+    },
+    {
+      "id": "a-t8-100",
+      "nom": "100 × Anneau d'habitation",
+      "texte": "Avoir 100 × Anneau d'habitation"
+    },
+    {
+      "id": "a-t9-25",
+      "nom": "25 × Ascenseur spatial",
+      "texte": "Avoir 25 × Ascenseur spatial"
+    },
+    {
+      "id": "a-t9-100",
+      "nom": "100 × Ascenseur spatial",
+      "texte": "Avoir 100 × Ascenseur spatial"
+    },
+    {
+      "id": "a-t10-25",
+      "nom": "25 × Forge stellaire",
+      "texte": "Avoir 25 × Forge stellaire"
+    },
+    {
+      "id": "a-t10-100",
+      "nom": "100 × Forge stellaire",
+      "texte": "Avoir 100 × Forge stellaire"
+    },
+    {
+      "id": "a-t11-25",
+      "nom": "25 × Essaim de Dyson",
+      "texte": "Avoir 25 × Essaim de Dyson"
+    },
+    {
+      "id": "a-t11-100",
+      "nom": "100 × Essaim de Dyson",
+      "texte": "Avoir 100 × Essaim de Dyson"
+    },
+    {
+      "id": "a-t12-25",
+      "nom": "25 × Portail de saut",
+      "texte": "Avoir 25 × Portail de saut"
+    },
+    {
+      "id": "a-t12-100",
+      "nom": "100 × Portail de saut",
+      "texte": "Avoir 100 × Portail de saut"
+    },
+    {
+      "id": "a-t13-25",
+      "nom": "25 × Cerveau-planète",
+      "texte": "Avoir 25 × Cerveau-planète"
+    },
+    {
+      "id": "a-t13-100",
+      "nom": "100 × Cerveau-planète",
+      "texte": "Avoir 100 × Cerveau-planète"
+    },
+    {
+      "id": "a-t14-25",
+      "nom": "25 × Moteur à trou noir",
+      "texte": "Avoir 25 × Moteur à trou noir"
+    },
+    {
+      "id": "a-t14-100",
+      "nom": "100 × Moteur à trou noir",
+      "texte": "Avoir 100 × Moteur à trou noir"
+    },
+    {
+      "id": "a-t15-25",
+      "nom": "25 × Architecte du vide",
+      "texte": "Avoir 25 × Architecte du vide"
+    },
+    {
+      "id": "a-t15-100",
+      "nom": "100 × Architecte du vide",
+      "texte": "Avoir 100 × Architecte du vide"
+    },
+    {
+      "id": "a-l1",
+      "nom": "1 vaisseau accueilli",
+      "texte": "Accueillir 1 vaisseau"
+    },
+    {
+      "id": "a-l10",
+      "nom": "10 vaisseaux accueillis",
+      "texte": "Accueillir 10 vaisseaux"
+    },
+    {
+      "id": "a-l50",
+      "nom": "50 vaisseaux accueillis",
+      "texte": "Accueillir 50 vaisseaux"
+    },
+    {
+      "id": "a-f1",
+      "nom": "1 fête de quartier",
+      "texte": "Fêter 1 fois un quartier"
+    },
+    {
+      "id": "a-f10",
+      "nom": "10 fêtes de quartier",
+      "texte": "Fêter 10 fois un quartier"
+    },
+    {
+      "id": "a-f50",
+      "nom": "50 fêtes de quartier",
+      "texte": "Fêter 50 fois un quartier"
+    },
+    {
+      "id": "a-d1",
+      "nom": "Une doctrine complète",
+      "texte": "Finir une branche de doctrine"
+    },
+    {
+      "id": "a-h1",
+      "nom": "1 défi relevé",
+      "texte": "Relever 1 défi"
+    },
+    {
+      "id": "a-h4",
+      "nom": "4 défis relevés",
+      "texte": "Relever 4 défis"
+    },
+    {
+      "id": "a-h8",
+      "nom": "8 défis relevés",
+      "texte": "Relever 8 défis"
+    },
+    {
+      "id": "a-u1",
+      "nom": "1 singularité",
+      "texte": "Gagner 1 singularité en tout"
+    },
+    {
+      "id": "a-u5",
+      "nom": "5 singularités",
+      "texte": "Gagner 5 singularités en tout"
+    },
+    {
+      "id": "a-u25",
+      "nom": "25 singularités",
+      "texte": "Gagner 25 singularités en tout",
+      "cache": true
+    },
+    {
+      "id": "a-u100",
+      "nom": "100 singularités",
+      "texte": "Gagner 100 singularités en tout",
+      "cache": true
+    },
+    {
+      "id": "a-w1",
+      "nom": "1 loi de la physique",
+      "texte": "Changer 1 loi de la physique"
+    },
+    {
+      "id": "a-w4",
+      "nom": "4 lois de la physique",
+      "texte": "Changer 4 lois de la physique"
+    },
+    {
+      "id": "a-w8",
+      "nom": "8 lois de la physique",
+      "texte": "Changer 8 lois de la physique",
+      "cache": true
+    },
+    {
+      "id": "a-g1",
+      "nom": "1 système conquis",
+      "texte": "Conquérir 1 système"
+    },
+    {
+      "id": "a-g5",
+      "nom": "5 systèmes conquis",
+      "texte": "Conquérir 5 systèmes"
+    },
+    {
+      "id": "a-g12",
+      "nom": "12 systèmes conquis",
+      "texte": "Conquérir 12 systèmes"
+    },
+    {
+      "id": "a-g21",
+      "nom": "21 systèmes conquis",
+      "texte": "Conquérir 21 systèmes",
+      "cache": true
+    }
+  ],
+  "records": [
+    {
+      "id": "batiments",
+      "nom": "Bâtiments",
+      "sens": "haut",
+      "format": "nombre"
+    },
+    {
+      "id": "colonies",
+      "nom": "Colonies fondées",
+      "sens": "haut",
+      "format": "nombre"
+    },
+    {
+      "id": "singularites",
+      "nom": "Singularités",
+      "sens": "haut",
+      "format": "nombre"
+    },
+    {
+      "id": "systemes",
+      "nom": "Systèmes conquis",
+      "sens": "haut",
+      "format": "nombre"
+    }
   ]
 }
